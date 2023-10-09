@@ -1,24 +1,24 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: [
       {
-        mytheme: {
-          primary: "#0e3f6d",
-          secondary: "#ef86a4",
-          accent: "#27a8aa",
-          neutral: "#2a2c3c",
-          "base-100": "#3e3541",
-          info: "#a5bff3",
-          success: "#20b179",
-          warning: "#f9d243",
-          error: "#dc4838",
+        lightTheme: {
+          primary: "#f4aa3a",
+          secondary: "#f4f4a1",
+          accent: "#1be885",
+          neutral: "#272136",
+          "base-100": "#ffffff",
+          info: "#778ad4",
+          success: "#23b893",
+          warning: "#f79926",
+          error: "#ea535a",
           body: {
             "background-color": "#e3e6e6",
           },
@@ -26,6 +26,4 @@ const config: Config = {
       },
     ],
   },
-  plugins: [require("daisyui")],
 };
-export default config;
