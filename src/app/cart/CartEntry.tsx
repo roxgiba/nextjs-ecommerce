@@ -54,6 +54,7 @@ for (let i = 1; i <= 99; i++){
               await setProductQuantity(product.id, newQuantity)
             })
           }}>
+            <option value={0}> 0 (Remove)</option>
             {quantityOptions}
           </select>
 
