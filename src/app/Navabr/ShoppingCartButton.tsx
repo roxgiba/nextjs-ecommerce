@@ -1,5 +1,6 @@
 import { ShoppingCart } from '@/lib/db/cart'
 import React from 'react'
+import { formatPrice } from '@/lib/format';
 
 interface ShoppingCartButtonProps {
   cart: ShoppingCart | null;
@@ -29,6 +30,14 @@ function ShoppingCartButton({cart} : ShoppingCartButtonProps) {
 </span>
         </div>
       </label>
+      <div tabIndex={0} className='card dropdown-content card-compact mt-3 w-52 bg-base-100 shadow z-30'>
+        <div className='card-body'>
+          <span className='text-lg font-bold'> {cart?.size || 0} items</span>
+          <span className='text-info'>
+            Subtotal: {formatPrice(cart?.subtotal || 0)}
+          </span>
+        </div>
+      </div>
     </div>
   )
 }
