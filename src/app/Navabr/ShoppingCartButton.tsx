@@ -1,12 +1,22 @@
+"use client"
+
 import { ShoppingCart } from '@/lib/db/cart'
 import React from 'react'
 import { formatPrice } from '@/lib/format';
+import Link from 'next/link';
 
 interface ShoppingCartButtonProps {
   cart: ShoppingCart | null;
 }
 
 function ShoppingCartButton({cart} : ShoppingCartButtonProps) {
+
+  function closeDropdown(){
+    const elem = document.activeElement as HTMLElement
+    if (elem) {
+      elem.blur();
+    }
+  }
   return (
     <div className='dropdown dropdown-end'>
       <label tabIndex={0} className='btn-ghost btn-circle btn'>
@@ -36,6 +46,15 @@ function ShoppingCartButton({cart} : ShoppingCartButtonProps) {
           <span className='text-info'>
             Subtotal: {formatPrice(cart?.subtotal || 0)}
           </span>
+          <div className='card-actions'>
+            <Link 
+            href="/cart"
+            className='btn btn-primary btn-block'
+            onClick={closeDropdown}>
+              View Cart
+            </Link>
+
+          </div>
         </div>
       </div>
     </div>
