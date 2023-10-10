@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logo.png"
 import { redirect } from "next/navigation";
+import { getCart } from "@/lib/db/cart";
+import ShoppingCartButton from "./ShoppingCartButton";
 
 
 async function searchProducts(formData : FormData) {
@@ -14,7 +16,11 @@ async function searchProducts(formData : FormData) {
   }
 }
 
-export default function Navbar(){
+export default async function Navbar(){
+
+  const cart = await getCart();
+
+
   return(
     <div className="bg-base-100">
       <div className="navbar max-w-7xl m-auto flex-col sm:flex-row gap-2">
@@ -36,7 +42,7 @@ export default function Navbar(){
             </div>
 
           </form>
-
+          <ShoppingCartButton cart={cart} />
         </div>
       </div>
     </div>
