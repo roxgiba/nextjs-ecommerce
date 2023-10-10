@@ -16,6 +16,7 @@ const cart = await getCart();
       {cart?.items.map(cartItem => (
         <CartEntry cartItem={cartItem} key={cartItem.id} setProductQuantity={setProductQuantity} />
       ))}
+      {!cart?.items.length && <p>Your cart is empty.</p>}
     </div>
   )
 }
