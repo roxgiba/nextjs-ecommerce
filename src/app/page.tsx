@@ -38,7 +38,7 @@ export default async function Home() {
       ))}
 
      </div>
-     <PaginationBar currentPage={3} totalPages={99} />
+     <PaginationBar currentPage={13} totalPages={99} />
     </div>
   )
 }
