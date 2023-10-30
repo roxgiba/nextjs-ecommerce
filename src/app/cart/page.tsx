@@ -1,10 +1,10 @@
 import { getCart } from "@/lib/db/cart";
 import { formatPrice } from "@/lib/format";
 import CartEntry from "./CartEntry";
-import  {setProductQuantity}  from "./actions";
+import { setProductQuantity } from "./actions";
 
 export const metadata = {
-  title: "Your Cart - Flowmazon",
+  title: "Your Cart - NatureList",
 };
 
 export default async function CartPage() {
