@@ -37,13 +37,11 @@ export default async function Navbar(){
           <form action={searchProducts}>
             <div className="form-control">
               <input 
-              name="searchQuesty"
+              name="searchQuery"
               placeholder="Search"
               className="input input-bordered w-full min-w-[100px]"
               />
-
             </div>
-
           </form>
           <ShoppingCartButton cart={cart} />
           <UserMenuButton session={session} />
