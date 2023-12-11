@@ -1,18 +1,77 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Next.js E-Commerce Website
+
+Build and deploy a full-stack e-commerce website with Next.js 13.4 and the new app router. This tutorial will guide you through harnessing Next.js server actions, managing databases with Prisma, constructing a dynamic website reminiscent of Amazon, and ensuring user security with Next-Auth, MongoDB, and Google login. Enhance user experience with anonymous carts and a stellar UI using TailwindCSS and DaisyUI. Seamlessly deploy on Vercel, optimize page metadata, streamline Prisma requests with React cache, and set up essential developer tools for a smooth coding journey.
+
+## Introduction
+
+Embark on a journey to build a fully-featured e-commerce website using the latest technologies and best practices. This project combines the power of Next.js, Prisma, Next-Auth, MongoDB, and TailwindCSS to create a robust and secure online shopping experience.
+
+## Features
+
+- Next.js app router for seamless navigation
+- Prisma for efficient database management
+- Next-Auth for secure authentication, including Google login
+- MongoDB for scalable and reliable data storage
+- TailwindCSS and DaisyUI for a visually appealing user interface
+- Anonymous carts for improved user experience
+- Vercel deployment for effortless hosting
+- Metadata optimization for better SEO
+- React cache to streamline Prisma requests
+- Essential developer tools for a smooth coding experience
+
 ## Getting Started
 
-First, run the development server:
+Follow the steps below to set up and run the project on your local machine.
 
-```bash
+## Prerequisites
+
+Make sure you have the following software/tools installed:
+
+- Node.js
+- npm or yarn
+- MongoDB
+
+## Installation
+1. Clone the repository: git clone [https://github.com/your-username/your-repo.git](https://github.com/roxgiba/nextjs-ecommerce)
+2. Navigate to the project folder: cd nextjs-ecommerce
+3. Install dependencies: npm install or yarn install
+
+## Usage
+Learn how to use and develop the project in different environments.
+
+## Development
+Run the project in development mode:
+
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Visit http://localhost:3000 in your browser.
+
+## Production
+Deploy the project to production:
+
+```
+npm run build
+npm start
+# or
+yarn build
+yarn start
+```
+Visit your deployed site.
+
+## Technologies Used
+Explore the main technologies and frameworks used in the project.
+
+- Next.js 13.4
+- Prisma
+- Next-Auth
+- MongoDB
+- TailwindCSS and DaisyUI
+- Vercel
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -29,8 +88,5 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgments
+Thanks to _codinginflow_ and _freeCodeCamp.org_ who inspired this work.
